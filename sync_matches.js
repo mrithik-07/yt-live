@@ -2,7 +2,7 @@ async function syncMatches() {
   const { default: fetch } = await import('node-fetch');
   const YOUTUBE_API_KEY = process.env.YOUTUBE_API_KEY;
   const CHANNEL_HANDLE = "@IndianSuperLeague";
-  const FIREBASE_PROJECT_ID = "m-livesports-tv-app";
+  const FIREBASE_PROJECT_ID = "m-live-sports-tv-app";
 
   try {
     const channelRes = await fetch(`https://www.googleapis.com/youtube/v3/channels?part=id&forHandle=${CHANNEL_HANDLE}&key=${YOUTUBE_API_KEY}`);

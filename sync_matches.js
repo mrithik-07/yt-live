@@ -1,7 +1,7 @@
 async function syncMatches() {
   const { default: fetch } = await import('node-fetch');
   const YOUTUBE_API_KEY = process.env.YOUTUBE_API_KEY;
-  const CHANNEL_HANDLE = "IndianSuperLeague";
+  const CHANNEL_HANDLE = "@IndianSuperLeague";
   const FIREBASE_PROJECT_ID = "m-livesports-tv-app";
 
   try {
